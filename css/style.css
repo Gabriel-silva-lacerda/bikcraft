@@ -1,0 +1,11 @@
+@import "./global/global.css";
+
+/* home page */
+@import "./bikecraft/header.css";
+@import "./bikecraft/bike.css";
+
+@import "./colors.css";
+@import "./catalog.css";
+@import "./qualities.css";
+@import "./newsletter.css";
+@import "./footer.css";

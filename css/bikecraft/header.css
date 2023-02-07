@@ -1,0 +1,24 @@
+header {
+    background-color: var(--cor-12);
+}
+
+.navgation {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 25px 20px;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    gap: 40px;
+}
+
+nav ul a {
+    color: var(--cor-1);
+    padding: 15px 0px;
+    font-size: 1.1rem;
+}
