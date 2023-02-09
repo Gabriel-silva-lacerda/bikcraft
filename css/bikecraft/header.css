@@ -3,17 +3,22 @@ header {
 }
 
 .navgation {
-    max-width: 1200px;
+    max-width: 1150px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 25px 20px;
+    padding: 20px 20px;
     margin: 0 auto;
+}
+
+.navgation img {
+    margin-right: 20px;
 }
 
 nav ul {
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
 }
 
@@ -21,4 +26,30 @@ nav ul a {
     color: var(--cor-1);
     padding: 15px 0px;
     font-size: 1.1rem;
+}
+
+@media (max-width: 800px) {
+    nav ul {
+        gap: 20px;
+    }
+
+    nav ul a {
+        background-color: var(--cor-11);
+        padding: 13px 15px;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 600px) {
+    .navgation {
+       padding: 15px 20px;
+    }
+    nav ul {
+        gap: 30px 13px;
+    }
+
+    nav ul a {
+        font-size: .9rem;
+        padding: 10px 12px;
+    }
 }
