@@ -22,6 +22,27 @@ nav ul {
     gap: 40px;
 }
 
+nav ul li {
+    border-bottom: 2px solid transparent;
+    position: relative;
+}
+
+nav ul li::after {
+    content: "";
+    width: 0px;
+    display: block;
+    height: 2px;
+    background-color: white;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    transition: 0.4s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
 nav ul a {
     color: var(--cor-1);
     padding: 15px 0px;

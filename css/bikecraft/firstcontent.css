@@ -1,4 +1,4 @@
-.buy-bike {
+.home-page {
     background: var(--cor-12) url(../../img/dec/bottom-left.svg) no-repeat bottom 160px left 20px;
     box-shadow: inset 0 -130px var(--cor-0);
 }
@@ -54,16 +54,12 @@ picture img {
     .bike-specification p {
         font-size: 1.1rem;
     }
-
-    .bike-specification a {
-        margin-bottom: 0;
-    }
 }
 
 @media (max-width: 800px) {
-    .buy-bike {
+    .home-page {
         background: var(--cor-11);
-        box-shadow: inset 0 -200px var(--cor-0);
+        box-shadow: inset 0 -70px var(--cor-0);
     }
     
     .first-content {
@@ -78,14 +74,20 @@ picture img {
         font-size: 2rem;
         margin-top: 40px;
     }
+
     .bike-specification p {
         max-width: initial;
         margin: 15px 0px;
     }
 
     picture img {
-        width: 100%;
-        height: 70%;
-        object-fit: cover;
+        height: 300px;
+    }
+}
+
+@media (max-width: 600px) { 
+    .bike-specification a {
+        padding: 14px 15px;
+        font-size: 1rem;
     }
 }

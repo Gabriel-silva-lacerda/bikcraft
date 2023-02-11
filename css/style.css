@@ -4,7 +4,8 @@
 @import "./bikecraft/header.css";
 @import "./bikecraft/firstcontent.css";
 
-@import "./colors.css";
+/* second part */
+@import "./buybike.css";
 @import "./catalog.css";
 @import "./qualities.css";
 @import "./newsletter.css";
