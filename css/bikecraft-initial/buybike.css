@@ -1,47 +1,40 @@
-.bike-container {
-    padding: 0px 20px;
-    margin-bottom: 500px;
-}
-
 .bikes {
     display: flex;
     justify-content: center;
     gap: 40px;
-    
+    padding: 0px 20px;
 }
 
 .bike-container h2 {
     max-width: 1150px;
     margin: 70px auto 30px auto;
     font-size: 4rem;
+    padding: 0px 20px;
 }
 
 .bikes img{
     width: 100%;
     max-width: 450px;
-    min-width: 240px;
+    min-width: 250px;
 }
 
 .sales h3 {
     color: var(--cor-12);
     font-size: 2rem;
     transition: width .1s;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin: 15px 0px 10px 20px;
-    position: relative;
+    margin: 15px 0px 10px 0px;
+    display: flex;
+    align-items: center;
 }
 
 .sales h3::before {
     content: "";
     width: 12px;
     height: 8px;
-    position: absolute;
     background-color: var(--cor-p1);
-    left: -20px;
-    top: 14px;
     transition: width 0.2s;
-    display: inline-block
+    display: inline-block;
+    margin-right: 8px;
 }
 
 .sales a:hover h3::before {
@@ -52,4 +45,22 @@
     color: var(--cor-8);
     font-size: 1.1rem;
     margin-left: 20px;
+}
+
+@media (max-width: 880px) {
+    
+    .bikes {
+        overflow-x: auto;
+        justify-content: initial;
+        gap: 20px;
+        padding-bottom: 20px;
+    }
+
+    .bike-container h2 {
+        font-size: 2rem;
+    }
+
+    .sales h3 {
+        font-size: 1.5rem;
+    }
 }
