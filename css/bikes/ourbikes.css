@@ -71,6 +71,7 @@
 .about-list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .about-bikes ul {
@@ -115,12 +116,15 @@
     height: 10px;
     margin-left: 12px;
     background: url(../../img/icones/seta.svg);
-    transition: 0.2s;
-    animation-name: slide;
+    transition: 0.3s;
 }
 
 .button-about:hover {
-    
+    background: linear-gradient(#ffb60d, #e59317);
+}
+
+.button-about:hover::after {
+    transform: translate(7px);
 }
 
 .bike-img {
@@ -149,11 +153,12 @@
         grid-template-columns: 1fr;
         background-image: url(initial);
         margin: 40px 0px 0px 0px;
+        gap: 0;
     }
 
     .black-bike, .gray-bike, .white-bike {
-        width: 100%;
-        height: 95%;
+        max-width: 100%;
+        height: auto;
         display: block;
         object-fit: initial;
     }
@@ -165,5 +170,43 @@
     .black-container {
         background-image: initial;
         background-color: var(--cor-11);
+    }
+
+    .our-bikes p {
+        text-transform: none;
+        font-size: 1rem;
+        padding-top: 40px;
+    }
+    
+    .our-bikes h2 {
+        font-size: 2rem;
+        padding-bottom: 40px;
+    }
+
+    .about-bikes h3 {
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-bikes ul  {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .about-bikes ul li:last-child {
+        margin-bottom: 20px;
+    }
+
+    .about-bikes ul li {
+        margin-bottom: 20px;
+        font-size: 1rem;
+        
+    }
+
+    .button-about {
+        padding: 15px 22px;
+        font-size: 1rem;
     }
 }
