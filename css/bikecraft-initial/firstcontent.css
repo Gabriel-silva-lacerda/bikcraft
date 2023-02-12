@@ -47,6 +47,10 @@ picture img {
     display: inline-block;
 }
 
+.bike-specification a:hover {
+    background: linear-gradient(#ffb60d, #e59317);
+}
+
 @media (max-width: 1200px) {
     .bike-specification h1 {
         font-size: 3rem;

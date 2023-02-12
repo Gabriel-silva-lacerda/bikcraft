@@ -1,0 +1,169 @@
+.initial-title {
+    background-color: var(--cor-11);
+    padding: 0px 20px;
+}
+
+.our-bikes {
+    max-width: 1150px;
+    margin: 0 auto;
+    background-image: url(../../img/dec/top-right.svg);
+    background-repeat: no-repeat;
+    background-position: top 60px right 20px;
+}
+
+.our-bikes p {
+    margin: 0;
+    margin-bottom: 5px;
+    padding-top: 60px;
+    color: var(--cor-5);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.our-bikes h2 {
+    font-size: 4rem;
+    color: var(--cor-1);
+    margin: 0;
+    padding-bottom: 60px;
+}
+
+.about-container, .gray {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1150px;
+    margin: 60px auto;
+    padding: 0px 20px;
+    gap: 40px;
+    background-image: url(../../img/dec/top-right.svg);
+    background-repeat: no-repeat;
+    background-position: top 0px right 40px;
+}
+
+.black-container {
+   max-width: initial;
+   background: linear-gradient(to right, var(--cor-0) 30%, var(--cor-11) 0%);
+   padding: 1px 0px;
+}
+
+.about-bikes h3 {
+    font-size: 2rem;
+    margin: 5px 0px 20px 0px;
+}
+
+.second-subtitle {
+    color: var(--cor-1);
+}
+
+.about-bikes h3::before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 8px;
+    background-color: var(--cor-p1);
+    margin-bottom: 8px;
+}
+
+.about-bikes p {
+    color: var(--cor-8);
+    margin-bottom: 20px;
+}
+
+.about-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-bikes ul {
+    margin-bottom: 0;
+}
+
+.about-bikes ul li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    color: var(--cor-8);
+    font-size: 1.1rem;
+}
+
+.about-bikes ul li:last-child{
+    margin-bottom: 40px;
+}
+
+.about-bikes ul li img {
+    width: 24px;
+}
+
+.button-about {
+    background: linear-gradient(#ffbf00, #f2a50c);
+    align-self: flex-end;
+    margin-bottom: 40px;
+    padding: 18px 32px;
+    text-transform: uppercase;
+    color: var(--cor-p5);
+    font-weight: bolder;
+    border-radius: 4px;
+    font-size: 1.125rem;
+    display: inline-block;
+}
+
+.button-about::after {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    margin-bottom: 1px;
+    height: 10px;
+    margin-left: 12px;
+    background: url(../../img/icones/seta.svg);
+    transition: 0.2s;
+    animation-name: slide;
+}
+
+.button-about:hover {
+    
+}
+
+.bike-img {
+    position: relative;
+}
+
+.black-bike, .gray-bike, .white-bike {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.bike-img span {
+    position: absolute;
+    background-color: black;
+    padding: 10px;
+    color: white;
+    top: 20px;
+    right: 0px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 840px) {
+    .about-container, .gray {
+        grid-template-columns: 1fr;
+        background-image: url(initial);
+        margin: 40px 0px 0px 0px;
+    }
+
+    .black-bike, .gray-bike, .white-bike {
+        width: 100%;
+        height: 95%;
+        display: block;
+        object-fit: initial;
+    }
+
+    .gray-bike {
+       margin-top: 0px;
+    }
+
+    .black-container {
+        background-image: initial;
+        background-color: var(--cor-11);
+    }
+}

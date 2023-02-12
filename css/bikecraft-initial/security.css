@@ -106,6 +106,10 @@
     margin-top: 15px;
 }
 
+.silver-container a:hover {
+    background: var(--cor-9);
+}
+
 .gold-container a {
     background-color: var(--cor-p1);
     padding: 18px 35px;
@@ -116,6 +120,10 @@
     color: var(--cor-p5);
     border-radius: 5px;
     margin-top: 15px;
+}
+
+.gold-container a:hover {
+    background: linear-gradient(#ffb60d, #e59317);
 }
 
 @media (max-width:800px) {

@@ -25,7 +25,7 @@ footer {
     font-weight: bold;
 }
 
-.contact-list li, .contact-list li a, .information-list {
+.contact-list li, .contact-list li a, .information-list a {
     font-size: 1.1rem;
     color: var(--cor-5);
 }
@@ -66,11 +66,11 @@ footer {
     display: block;
 }
 
-.contact img {
+.contact a {
     margin-right: 20px;
 }
 
-.contact img:last-child {
+.contact a:last-child {
     margin-right: 0px;
 }
 

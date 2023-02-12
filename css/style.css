@@ -1,11 +1,15 @@
 @import "./global/global.css";
 
 /* first website */
-@import "./bikecraft-initial/header.css";
+@import "./global/header.css";
 @import "./bikecraft-initial/firstcontent.css";
 @import "./bikecraft-initial/buybike.css";
 @import "./bikecraft-initial/technology.css";
 @import "./bikecraft-initial/partners.css";
 @import "./bikecraft-initial/testimony.css";
 @import "./bikecraft-initial/security.css";
-@import "./bikecraft-initial/footer.css";
+@import "./global/footer.css";
+
+/* bikes website */
+
+@import "./bikes/ourbikes.css";
