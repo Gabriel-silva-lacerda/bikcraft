@@ -3,7 +3,6 @@
     grid-template-columns: 1fr 1fr;
     align-items: end;
     background-color: var(--cor-p1);
-    margin-bottom: 200px;
     background-image: url("../../img/dec/bottom-right.svg");
     background-repeat: no-repeat;
     background-position: right 35px bottom 30px;
