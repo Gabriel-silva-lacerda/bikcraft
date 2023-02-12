@@ -11,5 +11,9 @@
 @import "./global/footer.css";
 
 /* bikes website */
-
 @import "./bikes/ourbikes.css";
+
+/* secure page */
+@import "./securepage/secure.css";
+@import "./securepage/question.css";
+
