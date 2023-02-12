@@ -59,6 +59,10 @@ nav ul a {
         padding: 13px 15px;
         border-radius: 5px;
     }
+
+    nav ul li:hover::after {
+        width: 0;
+    }
 }
 
 @media (max-width: 600px) {
