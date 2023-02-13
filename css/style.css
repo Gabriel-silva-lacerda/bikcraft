@@ -19,6 +19,7 @@
 
 /* contacts */
 @import "./contacts/contacts.css";
+@import "./contacts/locations.css";
 
 /* terms */
 @import "./terms/terms.css";

@@ -1,0 +1,23 @@
+.locations-container {
+    background-color: var(--cor-1);
+    padding: 0px 20px;
+}
+
+.locations-container h2 {
+    margin: 0 auto;
+    max-width: 1150px;
+}
+
+.container-stores {
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.locations {
+    
+}
+.img-maps {
+    max-width: 100%;
+}
