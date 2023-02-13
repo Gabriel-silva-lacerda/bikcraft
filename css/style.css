@@ -17,3 +17,8 @@
 @import "./securepage/secure.css";
 @import "./securepage/question.css";
 
+/* contacts */
+@import "./contacts/contacts.css";
+
+/* terms */
+@import "./terms/terms.css";
