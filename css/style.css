@@ -23,3 +23,8 @@
 
 /* terms */
 @import "./terms/terms.css";
+
+/* nimbus */
+@import "./nimbus/nimbus.css";
+@import "./nimbus/bikes.css";
+
