@@ -45,6 +45,6 @@ ul {
     padding: 0;
 }
 
-.point {
+.point, .pedal-color {
     color: var(--cor-p1);
 }
