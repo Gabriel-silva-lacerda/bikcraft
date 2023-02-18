@@ -25,6 +25,7 @@
     color: white;
     padding-top: 60px;
     padding: 60px 60px 60px 60px;
+    background: var(--cor-12) url(../../img/dec/bottom-left.svg) no-repeat bottom 20px left 20px;
 }
 
 
@@ -85,6 +86,7 @@ form {
     background-color: var(--cor-0);
     border-radius: 0px 5px 5px 0px;
     padding: 60px 60px;
+    background: var(--cor-0) url(../../img/dec/bottom-right.svg) no-repeat bottom 20px right 20px;
 }
 
 form input {
@@ -179,6 +181,9 @@ form label {
 }
 
 @media (max-width: 800px) {
+    .bikecraft-secure-container {
+        background-image: initial;
+    }
     .budget-container {
         grid-template-columns: 1fr;
     }
