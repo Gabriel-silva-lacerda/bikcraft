@@ -27,14 +27,29 @@
 
 .title-secure {
     display: block;
-    padding: 40px 40px 10px 40px;
+    font-size: .8rem;
+    color: var(--cor-5);
+    text-transform: uppercase;
+    padding: 30px 35px 10px 35px;
+    position: relative;
+}
+
+.title-secure::before {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 8px;
+    background-color: var(--cor-p1);
+    position: absolute;
+    top: 33px;
+    left: 25px;
 }
 
 .bikcraft-secure {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 20px;
-    padding: 10px 40px 10px 40px;
+    gap: 15px;
+    padding: 10px 35px 10px 35px;
 }
 
 .choose label {
@@ -67,6 +82,7 @@
 form {
     background-color: var(--cor-0);
     border-radius: 0px 5px 5px 0px;
+    padding: 30px 35px 30px 35px;
 }
 
 form input {
@@ -77,4 +93,57 @@ form input {
     background-color: var(--cor-1);
 }
 
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.budget-title, .budget-delivery {
+    font-size: .8rem;
+    color: var(--cor-9);
+    text-transform: uppercase;
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.budget-title::before, .budget-delivery::before {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 8px;
+    top: 3px;
+    left: -10px;
+    background-color: var(--cor-p1);
+    position: absolute;
+}
+
+.budget-delivery {
+    margin-top: 40px;
+}
+
+.budget-name {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: auto auto;
+    margin-bottom: 20px;
+}
+
+.budget-name input {
+    width: 90%;
+}
+
+.cpf {
+    margin-bottom: 20px;
+}
+
+.cpf, .email {
+    width: 95%;
+}
+
+.budget-andress {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+}
 
