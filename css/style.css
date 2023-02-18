@@ -24,6 +24,8 @@
 /* terms */
 @import "./terms/terms.css";
 
-/* nimbus */
+/* more about bicycles */
 @import "./bikes-especification/bikes.css";
 
+/* budget */
+@import "./budget/budget.css";

@@ -1,0 +1,80 @@
+.budget-main {
+    background-color: var(--cor-1);
+}
+
+.budget {
+    padding: 0px 20px;
+    box-shadow: inset 0px 300px var(--cor-11);
+    background-color: var(--cor-1);
+    padding-bottom: 200px;
+}
+
+.budget-container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.budget-container {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+}
+
+.bikecraft-secure-container {
+    background-color: var(--cor-12);
+    border-radius: 5px 0px 0px 5px;
+    color: white;
+}
+
+.title-secure {
+    display: block;
+    padding: 40px 40px 10px 40px;
+}
+
+.bikcraft-secure {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    padding: 10px 40px 10px 40px;
+}
+
+.choose label {
+    font: 400 1rem/1.5 "Poppins", sans-serif;
+    color: var(--cor-4);
+    background-color: var(--cor-10);
+    padding: 12px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid var(--cor-10);
+    display: inline-block;
+    width: 80%;
+}
+
+.choose label::before {
+    content: "";
+    display: inline-block;
+    box-sizing: border-box;
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--cor-6);
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.choose label:hover {
+    border-color: var(--cor-9);
+}
+
+form {
+    background-color: var(--cor-0);
+    border-radius: 0px 5px 5px 0px;
+}
+
+form input {
+    display: block;
+    padding: 15px 10px;
+    border-radius: 5px;
+    border: 1px solid var(--cor-2);
+    background-color: var(--cor-1);
+}
+
+
