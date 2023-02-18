@@ -6,7 +6,7 @@
     padding: 0px 20px;
     box-shadow: inset 0px 300px var(--cor-11);
     background-color: var(--cor-1);
-    padding-bottom: 200px;
+    padding-bottom: 120px;
 }
 
 .budget-container {
@@ -23,15 +23,18 @@
     background-color: var(--cor-12);
     border-radius: 5px 0px 0px 5px;
     color: white;
+    padding-top: 60px;
+    padding: 60px 60px 60px 60px;
 }
+
 
 .title-secure {
     display: block;
     font-size: .8rem;
     color: var(--cor-5);
     text-transform: uppercase;
-    padding: 30px 35px 10px 35px;
     position: relative;
+    padding-bottom: 20px;
 }
 
 .title-secure::before {
@@ -41,15 +44,14 @@
     height: 8px;
     background-color: var(--cor-p1);
     position: absolute;
-    top: 33px;
-    left: 25px;
+    top: 3px;
+    left: -10px;
 }
 
 .bikcraft-secure {
     display: grid;
-    grid-template-columns: auto auto;
-    gap: 15px;
-    padding: 10px 35px 10px 35px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    gap: 20px;
 }
 
 .choose label {
@@ -82,7 +84,7 @@
 form {
     background-color: var(--cor-0);
     border-radius: 0px 5px 5px 0px;
-    padding: 30px 35px 30px 35px;
+    padding: 60px 60px;
 }
 
 form input {
@@ -144,6 +146,59 @@ form label {
 .budget-andress {
     display: grid;
     grid-template-columns: auto auto;
-    width: 100%;
+    gap: 15px;
 }
 
+.budget-andress input {
+    width: 90%;
+}
+
+.budget-button {
+    display: inline-block;
+    padding: 16px 32px;
+    background: linear-gradient(#ffbf00, #f2a50c);
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+    text-transform: uppercase;
+    color: var(--cor-p5);
+    font: 600 1.125rem/1.35 "Poppins", sans-serif;
+    max-width: max-content;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+@media (max-width: 1200px) {
+    .bikecraft-secure-container {
+        padding: 30px 35px 30px 35px
+    }
+
+    form {
+        padding: 30px 35px 30px 35px
+    }
+}
+
+@media (max-width: 800px) {
+    .budget-container {
+        grid-template-columns: 1fr;
+    }
+
+    .choose label {
+        width: 85%;
+    }
+}
+
+@media (max-width: 600px) {
+    .budget-name, .budget-andress {
+        grid-template-columns: 1fr;
+    }
+
+    .budget-name input, .budget-andress input {
+        width: 95%;
+    }
+
+    .budget-button {
+        padding: 12px 16px;
+        font-size: 1rem;
+    }
+}
