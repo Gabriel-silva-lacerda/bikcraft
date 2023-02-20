@@ -23,11 +23,14 @@
     background-color: var(--cor-12);
     border-radius: 5px 0px 0px 5px;
     color: white;
-    padding-top: 60px;
     padding: 60px 60px 60px 60px;
     background: var(--cor-12) url(../../img/dec/bottom-left.svg) no-repeat bottom 20px left 20px;
+    border-radius: 5px 0 0 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: start;
+    gap: 20px;
 }
-
 
 .title-secure {
     display: block;
@@ -35,7 +38,11 @@
     color: var(--cor-5);
     text-transform: uppercase;
     position: relative;
-    padding-bottom: 20px;
+}
+
+.selection .title-secure,
+.selection-two .title-secure {
+    margin-top: 20px;
 }
 
 .title-secure::before {
@@ -49,25 +56,31 @@
     left: -10px;
 }
 
-.bikcraft-secure {
+.selection, .selection-two {
+    display: none;
+}
+
+#bikcraft:checked ~ .selection, 
+#seguro:checked ~ .selection-two {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
     gap: 20px;
 }
 
-.choose label {
-    font: 400 1rem/1.5 "Poppins", sans-serif;
+.bikecraft-secure-container label {
+    font-weight: 400;
     color: var(--cor-4);
     background-color: var(--cor-10);
-    padding: 12px 16px;
-    border-radius: 4px;
+    display: block;
+    padding: 16px 16px;
+    border-radius: 5px;
     cursor: pointer;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
     border: 1px solid var(--cor-10);
-    display: inline-block;
-    width: 80%;
 }
 
-.choose label::before {
+.bikecraft-secure-container label::before {
     content: "";
     display: inline-block;
     box-sizing: border-box;
@@ -78,8 +91,79 @@
     margin-right: 8px;
 }
 
-.choose label:hover {
+.bikecraft-secure-container input:checked + label::before {
+    border-color: var(--cor-7);
+    box-shadow: inset 0 0 0 3px var(--cor-0), inset 0 0 0 5px var(--cor-7)
+}
+
+.bikecraft-secure-container label:hover {
+    background-color: var(--cor-9);
     border-color: var(--cor-9);
+}
+
+.bikecraft-secure-container input:focus + label{
+   box-shadow: 0 0 0 2px var(--cor-p1);
+   border-color: var(--cor-12);
+}
+
+.bikecraft-secure-container label span {
+    display: none;
+}
+
+.bikecraft-secure-container input:checked + label span {
+    display: inline-block;
+}
+
+.bikecraft-secure-container input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.bikecraft-secure-container input:checked + label {
+    background-color: var(--cor-0);
+    color: var(--cor-11);
+}
+
+.bikecraft-secure-container > label {
+    grid-column: initial;
+}
+
+.bikecraft-secure-container > * {
+    grid-column: 1 /-1;
+}
+
+.budget-details {
+    display: none;
+    background-color: var(--cor-0);
+    padding: 20px;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 4px;
+    align-items: center;
+}
+
+.budget-details ul {
+    color: black;
+    font-size: .9rem;
+}
+
+.budget-details ul img {
+    width: 24px;
+    margin-right: 8px;
+}
+
+.budget-details li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.bike-details {
+    max-width: 100%;
+}
+
+.bikecraft-secure-container input:checked + label + .budget-details {
+    display: grid;
 }
 
 form {
@@ -133,16 +217,13 @@ form label {
     margin-bottom: 20px;
 }
 
-.budget-name input {
-    width: 90%;
+.budget-name input, .cpf, .email, .budget-andress input{
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .cpf {
     margin-bottom: 20px;
-}
-
-.cpf, .email {
-    width: 95%;
 }
 
 .budget-andress {
@@ -151,9 +232,6 @@ form label {
     gap: 15px;
 }
 
-.budget-andress input {
-    width: 90%;
-}
 
 .budget-button {
     display: inline-block;
@@ -187,10 +265,6 @@ form label {
     .budget-container {
         grid-template-columns: 1fr;
     }
-
-    .choose label {
-        width: 85%;
-    }
 }
 
 @media (max-width: 600px) {
@@ -198,12 +272,14 @@ form label {
         grid-template-columns: 1fr;
     }
 
-    .budget-name input, .budget-andress input {
-        width: 95%;
-    }
-
     .budget-button {
         padding: 12px 16px;
         font-size: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .bikecraft-secure-container {
+        grid-template-columns: 1fr;
     }
 }
