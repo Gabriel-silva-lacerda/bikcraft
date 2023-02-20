@@ -121,8 +121,8 @@
             <h2>perguntas frequentes<span class="point">.</span></h2>
             <div class="common-questions">
                 <div class="questions">
-                    <h3>Qual forma de pagamento vocês aceitam?</h3>
-                    <p>Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
+                    <h3 id="itens">Qual forma de pagamento vocês aceitam?</h3>
+                    <p onclick="clickMenu()">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
                 </div>
                 <div class="questions">
                     <h3>Como posso entrar em contato?</h3>
@@ -175,5 +175,10 @@
         </div>
         <span class="reserved-rights">Bikcraft © Alguns direitos reservados.</span>
     </footer>
+    <script>
+        function clickMenu() {
+            itens.style.display = 'block'
+        }
+    </script>
 </body>
 </html>
