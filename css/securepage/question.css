@@ -19,13 +19,12 @@
     position: relative;
 }
 
-.questions::after {
+.questions h3::after {
     content: "";
     display: inline-block;
     width: 15px;
     height: 10px;
-    top: 32px;
-    right: 15px;
+    right: 0px;
     background: url(../../img/icones/seta-abrir.svg);
     background-repeat: no-repeat;
     position: absolute;
@@ -34,7 +33,7 @@
 }
 
 .questions:hover::after {
-    transform: rotateZ(180deg);
+    /* transform: rotateZ(180deg); */
 }
 
 .questions:nth-child(odd) {
@@ -61,6 +60,7 @@
 
 .questions p {
     max-width: 700px;
+    display: none;
 }
 
 @media (max-width: 1200px ) {

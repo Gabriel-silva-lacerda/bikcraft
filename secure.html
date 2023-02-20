@@ -121,28 +121,28 @@
             <h2>perguntas frequentes<span class="point">.</span></h2>
             <div class="common-questions">
                 <div class="questions">
-                    <h3 id="itens">Qual forma de pagamento vocês aceitam?</h3>
-                    <p onclick="clickMenu()">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
+                    <h3 id="to" onclick="clickPaymentes() " >Qual forma de pagamento vocês aceitam?</h3>
+                    <p id="payments">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
                 </div>
                 <div class="questions">
-                    <h3>Como posso entrar em contato?</h3>
-                    <p>Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
+                    <h3 onclick="clickContact()">Como posso entrar em contato?</h3>
+                    <p id="contact">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
                 </div>
                 <div class="questions">
-                    <h3>Vocês possuem algum desconto?</h3>
-                    <p>Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
+                    <h3 onclick="clickDiscount()">Vocês possuem algum desconto?</h3>
+                    <p id="discount">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
                 </div>
                 <div class="questions">
-                    <h3>Qual a garantia que possuo?</h3>
-                    <p>Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
+                    <h3 onclick="clickWarranty()">Qual a garantia que possuo?</h3>
+                    <p id="warranty">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
                 </div>
                 <div class="questions">
-                    <h3>Posso parcelar no boleto?</h3>
-                    <p>Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
+                    <h3 onclick="clickInstallment()">Posso parcelar no boleto?</h3>
+                    <p id="installment">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
                 </div>
                 <div class="questions">
-                    <h3>Quantas trocas posso fazer ao ano?</h3>
-                    <p>Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
+                    <h3 onclick="clickReplacement()">Quantas trocas posso fazer ao ano?</h3>
+                    <p id="replacement">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
                 </div>
             </div>
         </section>
@@ -175,10 +175,6 @@
         </div>
         <span class="reserved-rights">Bikcraft © Alguns direitos reservados.</span>
     </footer>
-    <script>
-        function clickMenu() {
-            itens.style.display = 'block'
-        }
-    </script>
+    <script src="js/function.js" ></script>
 </body>
 </html>

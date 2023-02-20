@@ -50,9 +50,7 @@
     color: var(--cor-5);
 }
 
-.questions p {
-    display: none;
-}
+
 
 @media (max-width: 1200px) {
     .secure {
