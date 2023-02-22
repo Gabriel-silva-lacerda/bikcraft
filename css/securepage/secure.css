@@ -1,3 +1,8 @@
+.secure-container-two {
+    background-color: var(--cor-11);
+    padding: 0px 20px;
+}
+
 .secure {
     font-size: 1.5rem;
     color: var(--cor-5);
@@ -8,12 +13,18 @@
     text-transform: uppercase;
 }
 
-.secure-container h2 {
+.secure-h2 {
     padding-top: 10px;
     background-image: url(../../img/dec/top-right.svg);
     background-repeat: no-repeat;
     background-position: top 0px right 0px;
+    margin: 0;
+    font-size: 4rem;
+    color: var(--cor-1);
+    max-width: 1150px;
+    margin: 0 auto;
 }
+
 
 .benefits-container  {
     background-color: var(--cor-12);
@@ -62,7 +73,7 @@
         font-size: 3rem;
     }
 
-    .secure-container h2 {
+    .secure-h2  {
         padding-bottom: 20px;
         font-size: 3rem;
     }
@@ -88,7 +99,7 @@
         font-size: 1rem;
     }
 
-    .secure-container h2 {
+    .secure-h2 {
         background-image: url(initial);
         font-size: 2rem;
     }

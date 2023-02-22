@@ -28,3 +28,5 @@ function eventosPerguntas(pergunta) {
 }
   
 perguntas.forEach(eventosPerguntas);
+
+
